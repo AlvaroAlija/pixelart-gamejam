@@ -71,6 +71,7 @@ func take_damage():
 func die():
 	is_alive = false
 	sprite.play("dead")
+	$AudioStreamPlayer2D.play()
 	velocity = Vector2.ZERO
 	$CollisionShape2D.scale.y = 0.1
 	$CollisionShape2D.position.y += 20

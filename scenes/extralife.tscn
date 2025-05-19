@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://csepiovp6d14x"]
+
+[ext_resource type="Texture2D" uid="uid://kv683fwynnof" path="res://assets/kenney_ui-pack-space-expansion/PNG/Green/Default/bar_round_gloss_large.png" id="1_hqnpi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yg2aj"]
+size = Vector2(98, 26)
+
+[node name="extralife" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["extralife"]]
+
+[node name="BarRoundGlossLarge" type="Sprite2D" parent="StaticBody2D"]
+texture_filter = 1
+position = Vector2(9, 0)
+texture = ExtResource("1_hqnpi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_yg2aj")

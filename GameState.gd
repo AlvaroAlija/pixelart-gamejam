@@ -9,15 +9,13 @@ var level_paths := [
 	"res://levels/cinematica.tscn",
 	"res://levels/level_1.tscn",
 	"res://levels/level_2.tscn",
-	"res://level_3.tscn",
-	"res://level_4.tscn",
-	"res://level_5.tscn",
-	"res://level_6.tscn",
-	"res://level_7.tscn",
-	"res://level_8.tscn",
-	"res://level_9.tscn",
-	"res://level_10.tscn",
-	"res://end.tscn"
+	"res://levels/level_3.tscn",
+	"res://levels/level_4.tscn",
+	"res://levels/level_5.tscn",
+	"res://levels/level_6.tscn",
+	"res://levels/level_7.tscn",
+	"res://levels/level_8.tscn",
+	"res://levels/final.tscn"
 	# Agrega más niveles aquí
 ]
 

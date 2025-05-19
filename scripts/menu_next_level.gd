@@ -1,6 +1,14 @@
 extends Control
 
 
+func _ready():
+	var musica = $AudioStreamPlayer2D
+	musica.volume_db = -80  # volumen mínimo (silencio)
+	musica.play()
+	
+	var tween = create_tween()
+	tween.tween_property(musica, "volume_db", 0, 3.0)  # sube de -80 a 0 en 3 segundos
+
 
 
 func _on_button_pressed() -> void:

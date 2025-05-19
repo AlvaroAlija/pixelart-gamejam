@@ -22,6 +22,7 @@ var coyote_timer := 0.0
 @onready var attack_area = $AttackArea
 @onready var health_bar = $TextureProgressBar  # Ajusta si no está como hijo directo
 @onready var sword: AnimatedSprite2D = $AnimatedSprite2D2
+@onready var extra: int = 5
 
 func _ready():
 	health_bar.value = max_health
@@ -121,6 +122,7 @@ func heal(amount: int):
 	current_health += amount
 	if current_health > max_health:
 		current_health = max_health
+	$AudioStreamPlayer2D.play()
 	update_health_bar()
 	print("Sanado: ", amount, " Vida actual: ", current_health)
 
@@ -134,3 +136,7 @@ func _on_attack_area_body_entered(body: Node2D) -> void:
 		
 	elif body.is_in_group("muerte"):
 		get_tree().reload_current_scene()
+		
+	elif body.is_in_group("extralife"):
+		health_bar.value += extra
+		body.queue_free()

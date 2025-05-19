@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cj5tsnmkc58y3"
+path="res://.godot/imported/+1 multiplier.mp3-151b1c929022cf3f69162ccf70a1e23e.mp3str"
+
+[deps]
+
+source_file="res://assets/game sounds/game sounds/+1 multiplier.mp3"
+dest_files=["res://.godot/imported/+1 multiplier.mp3-151b1c929022cf3f69162ccf70a1e23e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
